@@ -115,3 +115,7 @@ Label the data
 */
 #no-more-tables td:before { content: attr(data-title); }
 }
+
+#idLookUp{
+  width: 20%;
+}
