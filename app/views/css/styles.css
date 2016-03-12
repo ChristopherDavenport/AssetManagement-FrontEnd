@@ -116,6 +116,7 @@ Label the data
 #no-more-tables td:before { content: attr(data-title); }
 }
 
-#idLookUp{
-  width: 20%;
+.input-group-addon {
+    min-width:150px;// if you want width please write here //
+    text-align:left;
 }
