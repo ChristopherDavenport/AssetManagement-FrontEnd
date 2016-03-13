@@ -23,7 +23,7 @@ public class HomeController extends Controller {
 
 
     public Result assetTest(){
-      return ok(assetTemplate.render());//views.assetGroups.html
+      return ok(assetTemplate.render(assetGroups.render()));//views.assetGroups.html
     }
 
 }
