@@ -14,8 +14,8 @@
 		<meta name="description" content="class schedule">
         <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
         <link href="/assets/stylesheets/styles.css" rel="stylesheet">
-		<link rel="shortcut icon" type="image/ico" href="/static/img/favicon.ico" />
-
+		<!--<link rel="shortcut icon" type="image/ico" href="/static/img/favicon.ico" />
+-->
 
 	</head>
 	<body>
@@ -52,12 +52,14 @@
 </div>
 <div class="row">
 	<div class="col-lg-6">
+		<form method="GET" action="/Master">
 		<div class="input-group">
-			<input type="text" class="form-control" placeholder="Asset # Lookup...">
+			<input type="text" class="form-control" name="id" placeholder="Asset # Lookup...">
 			<span class="input-group-btn">
-				<button class="btn btn-default" type="button">Go!</button>
+				<button class="btn btn-default" type="submit" value="Submit">Go!</button>
 			</span>
 		</div><!-- /input-group -->
+		<form>
 	</div><!-- /.col-lg-6 -->
 
 </div>
@@ -66,6 +68,48 @@
 
 @content
 
+<script>
+var myJson = {
+"asset_tag_pk":"00272",
+"tag_type_pk_ck":'E',
+"asset_desc":"A/P",
+"status_ck":"D",
+"status_date":"2/20/2016",
+"serial_number_u":"123Serial",
+"asset_type_fk":"RUKUS",
+"model_number":"Tandy 4000",
+"manufacturer_fk":"Dell",
+"vendor_fk":"No Vendor",
+"purchase_order":"3/01/2016",
+"purchase_date":"3/12/2016",
+"invoice":"somelonginvoicenumberhere",
+"warranty_start_date":"3/12/2015",
+"warranty_end_date":"6/12/2016",
+"asset_owner_fk":"Owner Foreign Key",
+"staff_userid":"127288",
+"building_fk":"Brown Hall (Building fk)",
+"location":"opac (location)",
+"ip_type_ck":"IP Type???",
+"cpu_speed":"Over 9000",
+"memory":"3 memories",
+"alt_asset_tag":"Alt asset tag thing",
+"alt_tag_type_ck":"Alt asset tag type",
+"activity_date":"Activity date 2/2/2222",
+"user_id":"useridThing",
+"product_id":"My Product ID",
+"staff_member":"Chris Davenport",
+"processor_type":"Intel Atom",
+"encrypted_ck":"N",
+"last_inv_verify":"2/4/2009"
+};
+
+for (i in myJson){
+item = document.getElementById(i);
+	if (item != null){
+		item.value = myJson[i];
+	}
+}
+</script>
 
 <!-- Edit this part!!!
 
