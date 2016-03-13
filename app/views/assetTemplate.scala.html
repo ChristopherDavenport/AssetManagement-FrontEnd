@@ -1,4 +1,8 @@
 
+@*
+@(content: Html)
+*@
+
 
 
 <!DOCTYPE html>
@@ -58,6 +62,12 @@
 	<hr>
 </div>
 
+@*
+@content
+*@
+@assetGroups.render
+
+
 <!-- Edit this part!!!
 
 <div class="row">
@@ -91,8 +101,6 @@
 
 
 Edit this part^^^^^ -->
-
-@assetGroups.render()
 
 
 
