@@ -22,8 +22,9 @@ public class HomeController extends Controller {
     }
 
 
-    public Result assetTest(){
-      return ok(assetTemplate.render(assetGroups.render()));//views.assetGroups.html
+    public Result assetTest(Object thing){
+
+      return ok(assetTemplate.render(views.html.assetGroups.render(), thing));//views.assetGroups.html
     }
 
 }
