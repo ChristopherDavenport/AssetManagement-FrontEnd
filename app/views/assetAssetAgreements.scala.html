@@ -61,18 +61,48 @@
     <div class="col-md-4">
 
 			<div class="input-group">
-				<span class="input-group-addon" >Group:</span>
-				<input type="text" id="asset_owner_group_pk" class="form-control" placeholder="Mascots" aria-describedby="basic-addon1">
+				<span class="input-group-addon" >Asset Tag:</span>
+				<input type="text" id="asset_tag_pk_fk" class="form-control" placeholder="*****" aria-describedby="basic-addon1">
 			</div>
 
 			<div class="input-group">
-				<span class="input-group-addon" >Description:</span>
-				<input type="text" id="asset_owner_group_desc" class="form-control" placeholder="King" aria-describedby="basic-addon1">
+				<span class="input-group-addon" >Tag Type:</span>
+				<input type="text" id="tag_type_pk_fk" class="form-control" placeholder="" aria-describedby="basic-addon1">
 			</div>
 
 			<div class="input-group">
-				<span class="input-group-addon" >Orgn:</span>
-				<input type="text" id="orgn_code" class="form-control" placeholder="1958" aria-describedby="basic-addon1">
+				<span class="input-group-addon" >Agreement:</span>
+				<input type="text" id="agreement_pk_fk" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+
+			<div class="input-group">
+				<span class="input-group-addon" >Service Type:</span>
+				<input type="text" id="service_type_fk" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+
+			<div class="input-group">
+				<span class="input-group-addon" >Agreement Start:</span>
+				<input type="text" id="agreement_start_date" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+
+			<div class="input-group">
+				<span class="input-group-addon" >Agreement End:</span>
+				<input type="text" id="agreement_end_date" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+
+			<div class="input-group">
+				<span class="input-group-addon" >Agreement Amt:</span>
+				<input type="text" id="agreement_amount" class="form-control" placeholder="*****" aria-describedby="basic-addon1">
+			</div>
+
+	  <hr>
+    </div>
+
+		<div class="col-md-4 form-inline">
+
+			<div class="input-group">
+				<span class="input-group-addon" >Note:</span>
+				<input type="text" id="agreement_notes" class="form-control" placeholder="" aria-describedby="basic-addon1">
 			</div>
 
 			<div class="input-group">
@@ -82,7 +112,7 @@
 
 			<div class="input-group">
 				<span class="input-group-addon" >Status Date:</span>
-				<input type="text" id="asset_owner_pk" class="form-control" placeholder="January 1, 2000" aria-describedby="basic-addon1">
+				<input type="text" id="status_date" class="form-control" placeholder="January 1, 2000" aria-describedby="basic-addon1">
 			</div>
 
 			<div class="input-group">
@@ -95,19 +125,12 @@
 				<input type="text" id="user_id" class="form-control" placeholder="Mr. Triton" aria-describedby="basic-addon1">
 			</div>
 
-	  <hr>
-    </div>
-
-		<div class="col-md-4 form-inline">
-
-					<label for="jj">Asset # Lookup:</label>
-						<input id="jj" type="text"  class="form-control">
 		<hr>
 		</div>
 		<div class="col-md-4 form-inline">
 
-					<label for="jj">Asset # Lookup:</label>
-						<input id="jj" type="text"  class="form-control">
+
+
 	  <hr>
 		</div>
 </div>
