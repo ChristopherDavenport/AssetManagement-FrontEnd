@@ -23,8 +23,88 @@ public class HomeController extends Controller {
 
 
     public Result assetTest(Object thing){
+      return ok(assetTemplate.render(views.html.assetGroups.render()));//views.assetGroups.html
+    }
 
-      return ok(assetTemplate.render(views.html.assetGroups.render(), thing));//views.assetGroups.html
+    //////////Deelete as soon as you make sure the others all have functions
+    /// will delete this soon
+    public Result Agreement(){
+      return ok(assetTemplate.render(views.html.
+      assetAgreements
+      .render()));//views.assetGroups.html
+    }
+
+
+    public Result AssetAgreement(){
+      return ok(assetTemplate.render(views.html.
+      assetAssetAgreements
+      .render()));//views.assetGroups.html
+    }
+
+    public Result Building(){
+      return ok(assetTemplate.render(views.html.
+      assetBuildings
+      .render()));//views.assetGroups.html
+    }
+    public Result Group(){
+      return ok(assetTemplate.render(views.html.
+      assetGroups
+      .render()));//views.assetGroups.html
+    }
+    public Result IP(){
+      return ok(assetTemplate.render(views.html.
+      assetIPs
+      .render()));//views.assetGroups.html
+    }
+    public Result Manufacturer(){
+      return ok(assetTemplate.render(views.html.
+      assetManufacturers
+      .render()));//views.assetGroups.html
+    }
+    public Result Master(){
+      return ok(assetTemplate.render(views.html.
+      assetMaster
+      .render()));//views.assetGroups.html
+    }
+    public Result Note(){
+      return ok(assetTemplate.render(views.html.
+      assetNotes
+      .render()));//views.assetGroups.html
+    }
+    public Result NoteType(){
+      return ok(assetTemplate.render(views.html.
+      assetNoteTypes
+      .render()));//views.assetGroups.html
+    }
+    public Result Owner(){
+      return ok(assetTemplate.render(views.html.
+      assetOwner
+      .render()));//views.assetGroups.html
+    }
+    public Result OwnerGroup(){
+      return ok(assetTemplate.render(views.html.
+      assetOwnerGroup
+      .render()));//views.assetGroups.html
+    }
+    public Result Printer(){
+      return ok(assetTemplate.render(views.html.
+      assetPrinters
+      .render()));//views.assetGroups.html
+    }
+    public Result ServiceType(){
+      return ok(assetTemplate.render(views.html.
+      assetServiceTypes
+      .render()));//views.assetGroups.html
+    }
+    public Result Type(){
+      return ok(assetTemplate.render(views.html.
+      assetTypes
+      .render()));//views.assetGroups.html
+    }
+    public Result Vendor(){
+      return ok(assetTemplate.render(views.html.
+      assetVendors
+      .render()));//views.assetGroups.html
     }
 
 }

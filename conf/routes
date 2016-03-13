@@ -13,3 +13,23 @@ GET     /message                    controllers.AsyncController.message
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 GET     /assetTest                  controllers.HomeController.assetTest(in)
+#GET     /assetAgreement             controllers.HomeController.assetAgreement
+
+
+GET     /Agreement                  controllers.HomeController.Agreement
+GET     /AssetAgreement             controllers.HomeController.AssetAgreement
+GET     /Building                   controllers.HomeController.Building
+GET     /Group                      controllers.HomeController.Group
+GET     /IP                         controllers.HomeController.IP
+
+GET     /Manufacturer               controllers.HomeController.Manufacturer
+GET     /Master                     controllers.HomeController.Master
+GET     /Note                       controllers.HomeController.Note
+GET     /NoteType                   controllers.HomeController.NoteType
+GET     /Owner                      controllers.HomeController.Owner
+
+GET     /OwnerGroup                 controllers.HomeController.OwnerGroup
+GET     /Printer                    controllers.HomeController.Printer
+GET     /ServiceType                controllers.HomeController.ServiceType
+GET     /Type                       controllers.HomeController.Type
+GET     /Vendor                     controllers.HomeController.Vendor
